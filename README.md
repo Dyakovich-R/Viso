@@ -9,3 +9,4 @@ The application is built on React, Firebase Realtime Database, Mapbox GL JS.
 ## Usage
 
 1. Clone the repository:
+2.[DEMOLINK]https://dyakovich-r.github.io/Viso/
