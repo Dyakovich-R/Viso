@@ -1,0 +1,21 @@
+.marker {
+	color: red; 
+	font-weight: bold;
+  font-size: 1rem;
+}
+.img {
+ width: 20px; 
+ height: 20px; 
+}
+
+.button {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 1;
+}
