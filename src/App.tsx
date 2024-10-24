@@ -1,14 +1,34 @@
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Button } from './components/ui/button';
+import { Navbar } from './components/shared/navbar';
+import ReceptionsPage from './components/pages/receptions-page';
+import ReceptionPage from './components/pages/reception-page';
+import ReceptionSelectedPage from './components/pages/reception-selected-page';
 
 export const App = () => {
-
   return (
     <>
-    <h1>hello
-      <Button>Button</Button>
-    </h1>
+      <Router>
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route
+              path="/"
+              element={<ReceptionsPage />}
+            />
+
+            <Route
+              path="/recipe/:id"
+              element={<ReceptionPage />}
+            />
+
+            <Route
+              path="/selected-recipes"
+              element={<ReceptionSelectedPage />}
+            />
+          </Routes>
+        </div>
+      </Router>
     </>
   );
 };
