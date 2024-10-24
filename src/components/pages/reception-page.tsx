@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ReceptionDetail } from '../shared/reception-Detail';
-import { fetchMealDetails, Recipe } from '@/services/api';
+import { fetchMealDetails} from '@/services/api';
+import { Recipe } from '@/types';
 
 const ReceptionPage: React.FC = () => {
   const { id } = useParams();
